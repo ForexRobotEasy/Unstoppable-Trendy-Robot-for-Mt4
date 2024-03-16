@@ -1,0 +1,72 @@
+
+// Unstoppable Trendy Robot for MT4
+// Developer: Forex Robot Easy Team
+// Developer's Site: forexroboteasy.com
+
+// Trend Identification
+// Use Bollinger Bands to filter ranging markets and identify trending market conditions
+// Determine the strength and direction of the trend
+int TrendIdentification()
+{
+    // TODO: Implement Bollinger Bands and trend identification logic
+    // Return the strength and direction of the trend
+}
+
+// Entry Logic
+// Identify optimal buying and selling zones using support and resistance levels
+// Incorporate identified entry points into the trading strategy
+void EntryLogic()
+{
+    // TODO: Implement support and resistance level identification and entry logic
+    // Execute trades based on the identified entry points
+}
+
+// Exit Logic
+// Implement effective exit strategies to maximize profits and minimize risks
+// Determine exit points based on predefined criteria
+void ExitLogic()
+{
+    // TODO: Implement exit strategies such as trailing stops or target profit levels
+    // Close trades at the determined exit points
+}
+
+// Money Management
+// Incorporate proper money management techniques to control risk and protect capital
+// Calculate position sizes based on account balance, risk tolerance, and risk-reward ratios
+double MoneyManagement()
+{
+    // TODO: Implement money management techniques
+    // Calculate position size based on account balance, risk tolerance, and risk-reward ratios
+    // Return the calculated position size
+}
+
+// Main function
+void OnTick()
+{
+    // Trend Identification
+    int trendStrength = TrendIdentification();
+
+    // Entry Logic
+    if (trendStrength > 0)
+    {
+        EntryLogic();
+    }
+
+    // Exit Logic
+    ExitLogic();
+
+    // Money Management
+    double positionSize = MoneyManagement();
+
+    // TODO: Implement the necessary trade functions using the trend-based strategy
+
+    // Close all open positions and exit the program
+    CloseAll();
+}
+
+// Close all open positions
+void CloseAll()
+{
+    // TODO: Implement code to close all open positions
+}
+
